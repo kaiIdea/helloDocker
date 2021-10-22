@@ -20,4 +20,12 @@ public class HelloController {
         System.out.println();
         return "Hello World...";
     }
+
+
+    @ResponseBody
+    @RequestMapping(path = "/good",method = RequestMethod.GET)
+    public String good(){
+        System.out.println();
+        return "a good day from nowing...";
+    }
 }
