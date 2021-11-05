@@ -17,7 +17,7 @@ public class HelloController {
     @ResponseBody
     @RequestMapping(path = "/docker",method = RequestMethod.GET)
     public String getHi(){
-        System.out.println();
+        System.out.println("11111");
         return "Hello World...";
     }
 
@@ -25,7 +25,7 @@ public class HelloController {
     @ResponseBody
     @RequestMapping(path = "/good",method = RequestMethod.GET)
     public String good(){
-        System.out.println();
+        System.out.println("111111111111");
         return "a good day from nowing...";
     }
 }
