@@ -25,7 +25,7 @@ public class ActuatorController {
     @ResponseBody
     @RequestMapping(path = "/healthReady",method = RequestMethod.GET)
     public String healthReady(HttpServletRequest request){
-        log.info("actuator-health:"+ LocalDateTime.now().format(formatter)+",request:"+request.getRemoteHost()+",port:"+request.getRemotePort());
+        log.info("actuator-healthReady:"+ LocalDateTime.now().format(formatter)+",host:"+request.getRemoteHost()+",port:"+request.getRemotePort());
         return "已就绪...";
     }
 
@@ -33,7 +33,7 @@ public class ActuatorController {
     @ResponseBody
     @RequestMapping(path = "/healthLive",method = RequestMethod.GET)
     public String healthLive(HttpServletRequest request){
-        log.info("actuator-health:"+ LocalDateTime.now().format(formatter)+",host:"+request.getRemoteHost()+",port:"+request.getRemotePort());
+        log.info("actuator-healthLive:"+ LocalDateTime.now().format(formatter)+",host:"+request.getRemoteHost()+",port:"+request.getRemotePort());
         return "已存活...";
     }
 }
